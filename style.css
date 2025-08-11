@@ -1,7 +1,5 @@
-/* --- THEME COLORS --- */
 :root {
     --font-family: 'Poppins', sans-serif;
-    /* Dark Theme (Default) */
     --bg-color: #0d1117;
     --primary-color: #161b22;
     --border-color: #30363d;
@@ -14,20 +12,6 @@
     --hero-grad-2: rgba(35, 134, 54, 0.15);
 }
 
-body.light-theme {
-    /* Light Theme */
-    --bg-color: #ffffff;
-    --primary-color: #f1f5f9;
-    --border-color: #cbd5e1;
-    --text-color: #020617;
-    --text-secondary: #475569;
-    --accent-green: #16a34a;
-    --accent-blue: #2563eb;
-    --glow-color: rgba(37, 99, 235, 0.3);
-    --hero-grad-1: rgba(37, 99, 235, 0.1);
-    --hero-grad-2: rgba(22, 163, 74, 0.1);
-}
-
 /* Base Styles */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -35,7 +19,6 @@ body {
     font-family: var(--font-family);
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
 }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 .section-title { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; }
@@ -53,10 +36,9 @@ body {
 .btn-primary:hover { transform: translateY(-2px); }
 .btn-secondary:hover { background-color: var(--border-color); }
 
-
 /* Navigation */
 header {
-    background-color: color-mix(in srgb, var(--bg-color) 80%, transparent);
+    background-color: rgba(13, 17, 23, 0.8);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -65,36 +47,9 @@ header {
 }
 nav { display: flex; justify-content: space-between; align-items: center; height: 70px; }
 .logo { font-size: 1.5rem; font-weight: 700; color: var(--text-color); text-decoration: none; }
-.nav-right { display: flex; align-items: center; gap: 2rem; }
 .nav-links { list-style: none; display: flex; gap: 2rem; }
 .nav-links a { color: var(--text-secondary); text-decoration: none; font-weight: 500; }
 .nav-links a:hover { color: var(--text-color); }
-
-/* Theme Toggle Button */
-.theme-toggle-btn {
-    background: var(--primary-color);
-    border: 1px solid var(--border-color);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    position: relative;
-    overflow: hidden;
-}
-.theme-toggle-btn i {
-    position: absolute;
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-}
-.theme-toggle-btn .fa-sun { color: #f39c12; transform: translateY(150%); opacity: 0; }
-.theme-toggle-btn .fa-moon { color: #f1c40f; transform: translateY(0); opacity: 1; }
-
-.light-theme .theme-toggle-btn .fa-sun { transform: translateY(0); opacity: 1; }
-.light-theme .theme-toggle-btn .fa-moon { transform: translateY(-150%); opacity: 0; }
-
 
 /* Hero Section */
 .hero-section {
@@ -126,7 +81,7 @@ nav { display: flex; justify-content: space-between; align-items: center; height
     background: linear-gradient(45deg, var(--accent-green), var(--accent-blue));
     display: flex; align-items: center; justify-content: center;
     font-size: 8rem;
-    color: color-mix(in srgb, var(--bg-color) 20%, transparent);
+    color: rgba(255,255,255,0.8);
 }
 .scroll-down {
     position: absolute;
@@ -209,7 +164,6 @@ nav { display: flex; justify-content: space-between; align-items: center; height
 .exp-item ul { list-style: none; padding-top: 1rem; }
 .exp-item ul li { margin-bottom: 0.5rem; }
 .exp-item ul i { color: var(--accent-green); margin-right: 0.5rem; }
-
 
 /* Certifications Section */
 .cert-section { background-color: var(--primary-color); padding: 6rem 0; }
