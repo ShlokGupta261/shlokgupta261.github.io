@@ -88,7 +88,7 @@ nav { display: flex; justify-content: space-between; align-items: center; height
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-image: url('https://i.imgur.com/your-image.jpg'); /* REPLACE WITH YOUR IMAGE URL */
+    background-image: url('https://raw.githubusercontent.com/shlokgupta261/shlokgupta261.github.io/main/profile_pic.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
