@@ -1,33 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- THEME SWITCHER ---
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    // Function to apply the saved theme on page load
-    function applySavedTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            body.classList.add(savedTheme);
-        }
-    }
-
-    // Apply theme on initial load
-    applySavedTheme();
-
-    // Event listener for the theme toggle button
-    themeToggleBtn.addEventListener('click', () => {
-        body.classList.toggle('light-theme');
-        
-        // Save the current theme preference to localStorage
-        if (body.classList.contains('light-theme')) {
-            localStorage.setItem('theme', 'light-theme');
-        } else {
-            localStorage.removeItem('theme');
-        }
-    });
-
-
     // --- TYPING EFFECT ---
     const roles = ["Security Compliance Expert", "Risk Management Specialist", "Cybersecurity Specialist"];
     let roleIndex = 0;
