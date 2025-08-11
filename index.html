@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shlok Gupta - Security Compliance Expert</title>
+    <title>Shlok Gupta - Cybersecurity Professional</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <canvas id="background-canvas"></canvas>
+    <div class="cursor-follower"></div>
+
     <header>
         <nav class="container">
             <a href="#" class="logo">SHLOK</a>
@@ -19,6 +22,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -32,64 +36,48 @@
                     <p class="intro">Hello, I'm</p>
                     <h1>Shlok Gupta</h1>
                     <h2 class="typing-container">
-                        <span id="typing-effect"></span>
+                        <span id="typing-effect" class="gradient-text"></span>
                     </h2>
                     <p class="description">A highly effective cybersecurity specialist with expertise in GRC, IAM, security operations, and vulnerability management. Passionate about protecting critical systems and data.</p>
                     <div class="hero-buttons">
-                        <a href="#experience" class="btn btn-primary">View Experience</a>
+                        <a href="#about" class="btn btn-primary">About Me</a>
                         <a href="#contact" class="btn btn-secondary">Contact Me</a>
                     </div>
                     <div class="social-icons">
                         <a href="mailto:shlokgupta261@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                         <a href="tel:+12066094548" aria-label="Phone"><i class="fas fa-phone"></i></a>
                         <a href="https://linkedin.com/in/shlokgupta261" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user-shield"></i>
-                    </div>
+                    <div class="image-placeholder"></div>
                 </div>
             </div>
-            <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-chevron-down"></i></a>
         </section>
 
-        <section id="about" class="about-section">
+        <section id="about" class="content-section">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-grid">
                     <div class="about-text animate-on-scroll">
-                        <p>A highly effective cybersecurity specialist and Master's candidate with a proven track record of significantly improving organizational security. My expertise encompasses GRC, IAM, security operations, and vulnerability management.</p>
+                        <p>A highly effective cybersecurity specialist and Master's candidate with a proven track record of significantly improving organizational security. My expertise encompasses GRC, IAM, security operations, and vulnerability management. I am skilled in collaborating across teams to implement robust security solutions, conduct thorough audits, and mitigate risks.</p>
+                        <ul class="about-skills-list">
+                            <li><i class="fas fa-check-circle"></i> Risk Management</li>
+                            <li><i class="fas fa-check-circle"></i> Security Compliance</li>
+                            <li><i class="fas fa-check-circle"></i> Threat Intelligence</li>
+                            <li><i class="fas fa-check-circle"></i> Incident Response</li>
+                            <li><i class="fas fa-check-circle"></i> Cloud Security</li>
+                            <li><i class="fas fa-check-circle"></i> Network Security</li>
+                        </ul>
                     </div>
-                    <div class="skills-showcase">
-                        <div class="skill-card animate-on-scroll">
-                            <div class="skill-card-inner">
-                                <div class="skill-card-front"><i class="fas fa-shield-alt"></i><h4>Security Compliance</h4></div>
-                                <div class="skill-card-back"><p>Expert in ISO 27001, PCI DSS, HIPAA, NIST 800-53, and FedRAMP frameworks.</p></div>
-                            </div>
-                        </div>
-                        <div class="skill-card animate-on-scroll">
-                             <div class="skill-card-inner">
-                                <div class="skill-card-front"><i class="fas fa-tasks"></i><h4>Risk Management</h4></div>
-                                <div class="skill-card-back"><p>Identifying, assessing, and mitigating security risks to protect organizational assets.</p></div>
-                            </div>
-                        </div>
-                        <div class="skill-card animate-on-scroll">
-                            <div class="skill-card-inner">
-                                <div class="skill-card-front"><i class="fas fa-users"></i><h4>Team Collaboration</h4></div>
-                                <div class="skill-card-back"><p>Working effectively with teams across the organization to implement security solutions.</p></div>
-                            </div>
-                        </div>
-                        <div class="skill-card animate-on-scroll">
-                            <div class="skill-card-inner">
-                                <div class="skill-card-front"><i class="fas fa-fire"></i><h4>Threat Intelligence</h4></div>
-                                <div class="skill-card-back"><p>Researching and analyzing threats to improve preventative security measures.</p></div>
-                            </div>
-                        </div>
+                    <div class="about-cards animate-on-scroll">
+                        <div class="about-card"><i class="fas fa-shield-alt"></i> Security Compliance</div>
+                        <div class="about-card"><i class="fas fa-tasks"></i> Risk Management</div>
+                        <div class="about-card"><i class="fas fa-users"></i> Team Collaboration</div>
+                        <div class="about-card"><i class="fas fa-fire"></i> Threat Intelligence</div>
                     </div>
                 </div>
-                <div class="about-stats animate-on-scroll">
+                <div class="stats-container animate-on-scroll">
                     <div class="stat-item"><span>35</span><p>Security Incidents Prevented</p></div>
                     <div class="stat-item"><span>20</span><p>Security Posture Improvement</p></div>
                     <div class="stat-item"><span>40</span><p>Efficiency Increase</p></div>
@@ -98,106 +86,154 @@
             </div>
         </section>
 
-        <section id="skills" class="skills-section">
+        <section id="skills" class="content-section">
             <div class="container">
                 <h2 class="section-title">My Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-category animate-on-scroll">
                         <h3>Security Skills</h3>
-                        <div class="skill-bar"><span class="skill-name">Information Security</span><div class="bar"><div class="bar-fill" data-percent="95"></div></div></div>
-                        <div class="skill-bar"><span class="skill-name">Security Compliance</span><div class="bar"><div class="bar-fill" data-percent="90"></div></div></div>
-                        <div class="skill-bar"><span class="skill-name">Risk Management</span><div class="bar"><div class="bar-fill" data-percent="92"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">Information Security</span><span class="skill-percent">95%</span><div class="bar"><div class="bar-fill" data-percent="95"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">Security Compliance</span><span class="skill-percent">90%</span><div class="bar"><div class="bar-fill" data-percent="90"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">Risk Management</span><span class="skill-percent">92%</span><div class="bar"><div class="bar-fill" data-percent="92"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">Threat Intelligence</span><span class="skill-percent">85%</span><div class="bar"><div class="bar-fill" data-percent="85"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">Cloud Security</span><span class="skill-percent">85%</span><div class="bar"><div class="bar-fill" data-percent="85"></div></div></div>
                     </div>
                     <div class="skill-category animate-on-scroll">
                         <h3>Technical & Soft Skills</h3>
-                        <div class="skill-bar"><span class="skill-name">Python</span><div class="bar"><div class="bar-fill" data-percent="80"></div></div></div>
-                        <div class="skill-bar"><span class="skill-name">C/C++</span><div class="bar"><div class="bar-fill" data-percent="75"></div></div></div>
-                        <div class="skill-bar"><span class="skill-name">Leadership</span><div class="bar"><div class="bar-fill" data-percent="90"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">Python</span><span class="skill-percent">80%</span><div class="bar"><div class="bar-fill" data-percent="80"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">C/C++</span><span class="skill-percent">75%</span><div class="bar"><div class="bar-fill" data-percent="75"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">Leadership</span><span class="skill-percent">90%</span><div class="bar"><div class="bar-fill" data-percent="90"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">Team Management</span><span class="skill-percent">88%</span><div class="bar"><div class="bar-fill" data-percent="88"></div></div></div>
+                        <div class="skill-bar"><span class="skill-name">Social Engineering</span><span class="skill-percent">92%</span><div class="bar"><div class="bar-fill" data-percent="92"></div></div></div>
                     </div>
-                </div>
-                <h3 class="subsection-title">Security Frameworks</h3>
-                <div class="frameworks-grid">
-                     <div class="framework-item animate-on-scroll"><i class="fas fa-id-card"></i> ISO 27001</div>
-                     <div class="framework-item animate-on-scroll"><i class="fas fa-credit-card"></i> PCI DSS 4.0</div>
-                     <div class="framework-item animate-on-scroll"><i class="fas fa-briefcase-medical"></i> HIPAA</div>
-                     <div class="framework-item animate-on-scroll"><i class="fas fa-building"></i> NIST 800-53</div>
-                     <div class="framework-item animate-on-scroll"><i class="fas fa-cloud"></i> FedRAMP</div>
-                </div>
-                 <h3 class="subsection-title">Tools & Platforms</h3>
-                <div class="tools-grid animate-on-scroll">
-                    <span>OneTrust</span><span>Crowdstrike</span><span>Automox</span><span>GitHub</span><span>JIRA</span><span>Slack</span><span>AWS</span>
                 </div>
             </div>
         </section>
-        
-        <section id="experience" class="experience-section">
+
+        <section id="experience" class="content-section">
             <div class="container">
                 <h2 class="section-title">Professional Experience</h2>
-                <div class="exp-item animate-on-scroll">
-                    <h3>CSG International</h3>
-                    <h4>Information Security Analyst | Aug 2022 - Sep 2024</h4>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Enhanced Compliance Posture</li>
-                        <li><i class="fas fa-check-circle"></i> Improved Security Incident Prevention</li>
-                        <li><i class="fas fa-check-circle"></i> Strengthened Internal Controls</li>
-                    </ul>
-                </div>
-                 <div class="exp-item animate-on-scroll">
-                    <h3>Safe Security</h3>
-                    <h4>GRC & Threat Intel Intern | Jul 2021 - Aug 2022</h4>
-                     <ul>
-                        <li><i class="fas fa-check-circle"></i> Improved Security Posture</li>
-                        <li><i class="fas fa-check-circle"></i> Enhanced Threat Intelligence</li>
-                    </ul>
+                <div class="experience-timeline">
+                    <div class="exp-item animate-on-scroll">
+                        <div class="exp-header">
+                            <h3>CSG International</h3>
+                            <p>Information Security Analyst | Aug 2022 - Sep 2024</p>
+                        </div>
+                        <div class="exp-accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fas fa-check-circle"></i> Enhanced Compliance Posture</button>
+                                <div class="accordion-content"><p>Transitioned organizational compliance to ISO 27001:2022 and PCI DSS v4.0 by testing and documenting internal controls.</p></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fas fa-check-circle"></i> Improved Security Incident Prevention</button>
+                                <div class="accordion-content"><p>Reduced potential security incidents by 35% by managing and mitigating cyber risks and collaborating with GRC and IT teams.</p></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fas fa-check-circle"></i> Strengthened Internal Controls</button>
+                                <div class="accordion-content"><p>Strengthened internal control mechanisms by reviewing and managing quarterly PCI internal control attestations.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp-item animate-on-scroll">
+                        <div class="exp-header">
+                            <h3>Safe Security</h3>
+                            <p>GRC & Threat Intel Intern | Jul 2021 - Aug 2022</p>
+                        </div>
+                        <div class="exp-accordion">
+                             <div class="accordion-item">
+                                <button class="accordion-header"><i class="fas fa-check-circle"></i> Improved Security Posture</button>
+                                <div class="accordion-content"><p>Enhanced company security posture by 20% by managing enterprise assets with EDR and IDS tools.</p></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fas fa-check-circle"></i> Enhanced Threat Intelligence</button>
+                                <div class="accordion-content"><p>Researched industry-wide breaches to develop insights on threat actors and IAM-related misconfigurations.</p></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="certifications" class="cert-section">
+        <section id="education" class="content-section">
             <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    <div class="education-card animate-on-scroll">
+                        <i class="fas fa-university"></i>
+                        <h3>University of Washington</h3>
+                        <p>Master's, Cybersecurity Engineering</p>
+                        <p class="edu-date">Sep 2024 - Apr 2026 (Expected)</p>
+                        <span class="edu-tag graduate">Graduate</span>
+                    </div>
+                    <div class="education-card animate-on-scroll">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Sushant University</h3>
+                        <p>Bachelor's, Computer Science (Cybersecurity)</p>
+                        <p class="edu-date">Jun 2018 - Jul 2022</p>
+                        <span class="edu-tag undergraduate">Undergraduate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="content-section">
+             <div class="container">
                 <h2 class="section-title">Professional Certifications</h2>
                 <div class="cert-grid">
-                    <div class="cert-card animate-on-scroll">
-                        <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h4>ISO 27001:2013</h4>
-                        <p>Information Security Management</p>
+                    <div class="cert-card animate-on-scroll"><span>IRCA/IEC</span><h4>ISO 27001:2013</h4></div>
+                    <div class="cert-card animate-on-scroll"><span>IRCA/IEC</span><h4>ISO 27701:2019</h4></div>
+                    <div class="cert-card animate-on-scroll"><span>CompTIA</span><h4>Security+</h4></div>
+                    <div class="cert-card animate-on-scroll"><span>CompTIA</span><h4>A+</h4></div>
+                    <div class="cert-card animate-on-scroll ceh-card"><span>EC-Council</span><h4>Certified Ethical Hacker</h4></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div class="publication-list">
+                     <div class="pub-card animate-on-scroll">
+                        <div class="pub-content">
+                            <h4>Top Web Application Security - Threats & Standards</h4>
+                            <p>A comprehensive analysis of modern web application security threats and the standards designed to mitigate them.</p>
+                        </div>
+                        <span class="pub-tag published">Published</span>
                     </div>
-                    <div class="cert-card animate-on-scroll">
-                        <div class="cert-icon"><i class="fas fa-user-secret"></i></div>
-                        <h4>ISO 27701:2019</h4>
-                        <p>Privacy Information Management</p>
+                    <div class="pub-card animate-on-scroll">
+                        <div class="pub-content">
+                            <h4>LightSpeed Cache Vulnerability - CVE-2020-29172</h4>
+                            <p>Detailed proof of concept demonstrating the LightSpeed Cache vulnerability and recommended mitigation strategies.</p>
+                        </div>
+                        <span class="pub-tag published">Published</span>
                     </div>
-                    <div class="cert-card animate-on-scroll">
-                        <div class="cert-icon"><i class="fas fa-lock"></i></div>
-                        <h4>Security+</h4>
-                        <p>Core security functions</p>
-                    </div>
-                    <div class="cert-card animate-on-scroll">
-                        <div class="cert-icon"><i class="fas fa-desktop"></i></div>
-                        <h4>A+</h4>
-                        <p>IT technical support</p>
-                    </div>
-                    <div class="cert-card animate-on-scroll">
-                        <div class="cert-icon"><i class="fas fa-user-ninja"></i></div>
-                        <h4>CEH</h4>
-                        <p>Certified Ethical Hacker</p>
+                    <div class="pub-card animate-on-scroll">
+                        <div class="pub-content">
+                            <h4>Vulnerability Analysis of Android Health Apps Using Machine Learning</h4>
+                            <p>An innovative approach to analyzing security vulnerabilities in Android health applications using machine learning techniques.</p>
+                        </div>
+                         <span class="pub-tag under-review">Under Review</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <div class="container">
+        <section id="contact" class="content-section">
+             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-grid">
+                <div class="contact-wrapper">
                     <div class="contact-info">
-                        <h3>Contact Information</h3>
+                        <h3>CONTACT INFO</h3>
                         <p><i class="fas fa-envelope"></i> shlokgupta261@gmail.com</p>
                         <p><i class="fas fa-phone"></i> +1-206-609-4548</p>
                         <p><i class="fas fa-map-marker-alt"></i> Seattle, WA, USA</p>
+                        <h3>CONNECT WITH ME</h3>
+                        <div class="contact-social">
+                            <a href="https://linkedin.com/in/shlokgupta261" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                     <form action="#" class="contact-form">
-                        <h3>Send Me a Message</h3>
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" placeholder="Your Message" required></textarea>
@@ -207,6 +243,12 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Shlok Gupta | Cybersecurity Professional</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
