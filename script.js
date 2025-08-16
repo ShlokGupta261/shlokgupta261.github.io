@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function type() {
         if (!typingElement) return;
         let currentRole = roles[roleIndex];
-        let typeSpeed = 500;
+        let typeSpeed = 50;
         
         typingElement.textContent = currentRole.substring(0, charIndex + 1);
         charIndex++;
