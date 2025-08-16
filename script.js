@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- TYPING EFFECT ---
-    const roles = ["Security Compliance Expert", "Risk Management Specialist", "Cybersecurity Specialist"];
+    const roles = ["Information Security Analyst...", "Security Compliance Expert...", "Risk Management Consultant...", "Cybersecurity Engineer..."];
     let roleIndex = 0;
     let charIndex = 0;
     const typingElement = document.getElementById('typing-effect');
